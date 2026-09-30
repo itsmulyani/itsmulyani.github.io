@@ -179,6 +179,144 @@
             max-width: 700px;
         }
 
+        /* EDUCATION */
+.education {
+    min-height: 100vh;
+    padding: 120px 8%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #0d0d0d 0%,
+            rgba(13, 13, 13, 0.96) 38%,
+            rgba(13, 13, 13, 0.75) 65%,
+            rgba(13, 13, 13, 0.35) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(13, 13, 13, 0.15),
+            #0d0d0d
+        ),
+        url("images/campus.jpg") right center / cover no-repeat;
+}
+
+.education-content {
+    width: 100%;
+    max-width: 1150px;
+    position: relative;
+    z-index: 2;
+}
+
+.education .small-text {
+    color: #b8a4ff;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.education-title {
+    font-size: 52px;
+    margin: 0 0 20px;
+    font-weight: 700;
+}
+
+.education-title span {
+    color: #b8a4ff;
+}
+
+.education-intro {
+    max-width: 520px;
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.education-card {
+    max-width: 650px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    background: rgba(21, 21, 21, 0.72);
+    border: 1px solid #292929;
+    border-radius: 18px;
+
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: #b8a4ff;
+}
+
+.education-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(184, 164, 255, 0.1);
+    border: 1px solid #383838;
+    border-radius: 14px;
+
+    color: #b8a4ff;
+    font-size: 24px;
+}
+
+.education-year {
+    color: #b8a4ff;
+    font-size: 14px;
+}
+
+.education-info h3 {
+    margin: 8px 0;
+    font-size: 21px;
+}
+
+.education-info p {
+    margin: 5px 0;
+    color: #aaa;
+}
+
+.education-gpa {
+    color: #ddd !important;
+    margin-top: 12px !important;
+}
+
+/* EDUCATION RESPONSIVE */
+@media (max-width: 800px) {
+
+    .education {
+        padding: 100px 6%;
+
+        background:
+            linear-gradient(
+                90deg,
+                #0d0d0d 0%,
+                rgba(13, 13, 13, 0.92) 100%
+            ),
+            url("images/campus.jpg") center / cover no-repeat;
+    }
+
+    .education-title {
+        font-size: 40px;
+    }
+
+    .education-card {
+        align-items: flex-start;
+    }
+}
+        
         /* SKILLS */
 .skills-grid {
     margin-top: 40px;
@@ -546,24 +684,53 @@
 
     </section>
 
-<!-- ABOUT -->
-<section id="about">
+<!-- EDUCATION -->
+<section class="education" id="education">
 
-    <h2 class="section-title">
-        About <span>Me</span>
-    </h2>
+    <div class="education-content">
 
-    <p class="section-text">
-        I'm a D-IV Informatics Engineering graduate from Politeknik Negeri
-        Lhokseumawe with experience in web development through internship
-        and academic projects.
-    </p>
+        <div class="small-text">
+            EDUCATION
+        </div>
 
-    <p class="section-text" style="margin-top: 15px;">
-        I have experience working with PHP, Laravel, JavaScript, Python,
-        SQL/MySQL, and REST API integration. I'm interested in web and
-        backend development and enjoy learning new technologies.
-    </p>
+        <h2 class="education-title">
+            My <span>Education</span>
+        </h2>
+
+        <p class="education-intro">
+            My academic journey that built the foundation
+            for my skills and career in technology.
+        </p>
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                <span>✦</span>
+            </div>
+
+            <div class="education-info">
+
+                <span class="education-year">
+                    2021 — 2025
+                </span>
+
+                <h3>
+                    D-IV Informatics Engineering
+                </h3>
+
+                <p>
+                    Politeknik Negeri Lhokseumawe
+                </p>
+
+                <p class="education-gpa">
+                    GPA: 3.47 / 4.00
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
