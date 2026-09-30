@@ -317,6 +317,48 @@
         gap: 10px;
     }
 }
+
+        /* CERTIFICATES */
+.certificate-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.certificate-card {
+    padding: 28px;
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: #b8a4ff;
+}
+
+.certificate-card span {
+    color: #b8a4ff;
+    font-size: 13px;
+}
+
+.certificate-card h3 {
+    margin: 14px 0 8px;
+    font-size: 19px;
+}
+
+.certificate-card p {
+    color: #999;
+}
+
+@media (max-width: 800px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+}
+        
         /* RESPONSIVE */
         @media (max-width: 800px) {
 
@@ -575,7 +617,41 @@
 
 </section>
 
+<!-- CERTIFICATES -->
+<section id="certificates">
 
+    <h2 class="section-title">
+        My <span>Certificates</span>
+    </h2>
+
+    <p class="section-text">
+        Certifications and learning experiences that support my skills.
+    </p>
+
+    <div class="certificate-grid">
+
+        <div class="certificate-card">
+            <span>2025 — 2028</span>
+            <h3>Web Developer</h3>
+            <p>BNSP</p>
+        </div>
+
+        <div class="certificate-card">
+            <span>Feb — Mar 2026</span>
+            <h3>Microsoft Excel Basic to Advanced</h3>
+            <p>MySkill</p>
+        </div>
+
+        <div class="certificate-card">
+            <span>Jan — Mar 2026</span>
+            <h3>Data Analysis Bootcamp</h3>
+            <p>MySkill</p>
+        </div>
+
+    </div>
+
+</section>
+    
     <!-- CONTACT -->
     <section id="contact">
 
