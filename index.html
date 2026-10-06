@@ -141,27 +141,29 @@
             color: #b8a4ff;
         }
 
+/* HOME PHOTO */
 .home-photo {
-    width: 360px;
-    height: 440px;
+    width: 390px;
+    height: 500px;
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    flex-shrink: 0;
     overflow: hidden;
     background: transparent;
-    box-shadow: none;
 }
 
+/* soft charcoal glow behind the portrait */
 .home-photo::before {
     content: "";
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
     border-radius: 50%;
     background: #252525;
-    filter: blur(70px);
-    opacity: 0.8;
+    filter: blur(80px);
+    opacity: 0.75;
     z-index: 0;
 }
 
@@ -172,6 +174,7 @@
     height: 100%;
     object-fit: contain;
     object-position: center bottom;
+    display: block;
 }
 
         /* SECTION */
