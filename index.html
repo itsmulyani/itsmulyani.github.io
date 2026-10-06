@@ -141,24 +141,37 @@
             color: #b8a4ff;
         }
 
-        /* PHOTO PLACEHOLDER */
-        .home-photo {
-            width: 360px;
-            height: 440px;
-            border-radius: 25px;
-            overflow: hidden;
-            border: 1px solid #333;
-            box-shadow: 0 0 70px rgba(184, 164, 255, 0.12);
-            flex-shrink: 0;
-        }
-        
-        .home-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            display: block;
-        }
+/* HOME PHOTO */
+.home-photo {
+    width: 360px;
+    height: 440px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #0d0d0d;
+    box-shadow: 0 0 70px rgba(184, 164, 255, 0.12);
+    flex-shrink: 0;
+}
+
+.home-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transform: scale(1.08);
+
+    mask-image: radial-gradient(
+        ellipse at center,
+        black 55%,
+        transparent 100%
+    );
+
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        black 55%,
+        transparent 100%
+    );
+}
 
         /* SECTION */
         section {
